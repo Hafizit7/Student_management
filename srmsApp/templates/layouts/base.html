@@ -1,4 +1,5 @@
- {% load static %} {% load customfilter %}
+ {% load static %} 
+ {% load customfilter %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,7 +90,8 @@
     {% include 'includes/modals.html' %} {% include 'includes/fixed-plugin.html' %} {% include 'includes/scripts.html' %}
 
     <!-- Specific Page JS goes HERE  -->
-    {% block javascripts %}{% endblock javascripts %}
+    {% block javascripts %}
+    {% endblock javascripts %}
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
